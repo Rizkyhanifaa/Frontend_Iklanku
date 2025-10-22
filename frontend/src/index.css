@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&family=Lato:wght@400;700&display=swap");
+
+:root {
+  --color-primary-darkest: #141414;
+  --color-primary-dark: #11999E;
+  --color-primary-light: #CFE4FF;
+  --color-secondary: #DAE2E6;
+  --color-secondary-light: #DAE2E6;
+
+  --color-btn-primary: #007BFF;
+  --color-btn-success: #4EA63A;
+  --color-btn-info: #17A2B8;
+  --color-btn-confirm: #009970;
+  --color-btn-warning: #FF2F00;
+  --color-btn-danger: #FB0004;
+  --color-btn-disabled: #9CAFC8;
+  --color-btn-dark: #122786;
+  --color-btn-light: #FFFAFA;
+
+  --font-inter: "Inter", sans-serif;
+}
