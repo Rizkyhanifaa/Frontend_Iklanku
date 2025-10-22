@@ -12,6 +12,7 @@ import EditIklan from "./pages/advertiser/editiklan";
 
 // Admin
 import DashboardAdmin from "./pages/admin/dashboardAdmin";
+import ManajemenIklan from "./pages/admin/manajemenIklan";
 
 /* Pages Login */
 import Login from "./pages/login";
@@ -38,6 +39,7 @@ function App() {
 
         {/* Admin */}
         <Route path="/admin/dashboard" element={<DashboardAdmin />} />
+        <Route path="/admin/manajemeniklan" element={<ManajemenIklan />} />
       </Routes>
     </Router>
   );
