@@ -14,11 +14,11 @@ export default function Dashboard() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const menuItems = [
-        { icon: home, label: "Dashboard", active: true },
-        { icon: buatiklan, label: "Buat Iklan" },
-        { icon: statistik, label: "Statistik Iklan" },
-        { icon: daftariklan, label: "Daftar Iklan" },
-        { icon: logout, label: "Logout" },
+        { icon: home, label: "Dashboard", active: true, path: "/advertiser/dashboard" },
+        { icon: buatiklan, label: "Buat Iklan", path: "/advertiser/buatiklan" },
+        { icon: statistik, label: "Statistik Iklan", path: "/advertiser/statistik" },
+        { icon: daftariklan, label: "Daftar Iklan", path: "/advertiser/daftariklan" },
+        { icon: logout, label: "Logout", path: "/logout" },
     ];
 
     const user = {
@@ -51,10 +51,16 @@ export default function Dashboard() {
                 menuItems={menuItems}
                 user={user}
             />
-            <main className="flex-1 p-4 md:p-8">
+
+            <main className="flex-1 p-4 md:p-8 space-y-6">
                 <Header page="Pages" section="Dashboard" onMenuClick={() => setIsSidebarOpen(true)} />
                 <StatsGroup stats={stats} />
-                <Table columns={columns} rows={rows} />
+                <div className="bg-white shadow-md rounded-2xl p-5">
+                    <h2 className="text-lg font-semibold text-teal-600 mb-4">
+                        Tabel Statistik
+                    </h2>
+                    <Table columns={columns} rows={rows} />
+                </div>
             </main>
         </div>
     );

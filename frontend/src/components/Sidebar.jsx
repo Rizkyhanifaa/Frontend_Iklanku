@@ -10,7 +10,6 @@ export default function Sidebar({ isOpen, onClose, logo, title, menuItems, user 
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 md:static`}
             >
                 <div>
-                    {/* Logo */}
                     <div className="flex items-center justify-between px-6 py-6 border-b">
                         <div className="flex items-center gap-3">
                             <img src={logo} alt="Logo" className="w-8 h-8 object-contain" />
@@ -21,7 +20,6 @@ export default function Sidebar({ isOpen, onClose, logo, title, menuItems, user 
                         </button>
                     </div>
 
-                    {/* Menu */}
                     <nav className="flex flex-col gap-1 mt-4">
                         {menuItems.map((item, i) => (
                             <SidebarItem key={i} {...item} />
@@ -29,7 +27,6 @@ export default function Sidebar({ isOpen, onClose, logo, title, menuItems, user 
                     </nav>
                 </div>
 
-                {/* User Card */}
                 {user && (
                     <div className="bg-teal-600 text-white p-4 m-4 rounded-xl flex items-center gap-3">
                         <img src={user.avatar} alt="User" className="w-10 h-10 rounded-full" />
@@ -41,7 +38,6 @@ export default function Sidebar({ isOpen, onClose, logo, title, menuItems, user 
                 )}
             </aside>
 
-            {/* Overlay mobile */}
             {isOpen && <div className="fixed inset-0 bg-black/30 z-30 md:hidden" onClick={onClose}></div>}
         </>
     );
