@@ -15,7 +15,7 @@ export default function Header({ page, section, onMenuClick, showSearch = true, 
                 <h2 className="text-sm font-medium">
                     <span className="text-gray-400">{page}</span>
                     <span className="text-gray-300 mx-1">/</span>
-                    <span className="text-teal-700 font-bold">{section}</span>
+                    <span className="text-black font-bold">{section}</span>
                 </h2>
             </div>
 

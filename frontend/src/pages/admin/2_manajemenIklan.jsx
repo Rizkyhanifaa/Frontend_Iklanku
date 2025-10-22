@@ -37,12 +37,32 @@ export default function ManajemenIklan() {
   const columns = ["Nama Iklan", "Advertiser", "Jadwal Tayang", "Penempatan", "Status", "Aksi"];
   const rows = [
     [
-        "Promo Diskon 10.10",
-        "Tokoku.id",
-        "07/10/2025 - 12/10/2025",
-        "Sidebar Kanan",
-        "Aktif",
-        <Button label="Lihat" onClick={() => navigate("/admin/detailiklan")} />,
+      "Promo Diskon 10.10",
+      "Tokoku.id",
+      "07/10/2025 - 12/10/2025",
+      "Sidebar Kanan",
+      "Aktif",
+      <Button
+        label="Lihat"
+        onClick={() =>
+          navigate("/admin/detailiklan", {
+            state: {
+              nama: "Promo Diskon 10.10",
+              advertiser: "Tokoku.id",
+              jadwal: "07/10/2025 - 12/10/2025",
+              penempatan: "Sidebar Kanan",
+              status: "Aktif",
+              deskripsi:
+                "Nikmati promo diskon besar-besaran hingga 50% untuk semua produk selama periode 10.10.",
+              url: "https://tokoku.id/promo1010",
+              kategori: "Komersial",
+              ukuran: "728px x 90px",
+              tanggal: "07 Okt 2025 - 12 Okt 2025",
+              gambar: null,
+            },
+          })
+        }
+      />,
     ],
     [
       "Gadget Canggih 2025",
@@ -50,7 +70,27 @@ export default function ManajemenIklan() {
       "01/10/2025 - 15/10/2025",
       "Header Banner",
       "Pending",
-      <Button label="Lihat" onClick={() => navigate("/admin/detailiklan")} />,
+      <Button
+        label="Lihat"
+        onClick={() =>
+          navigate("/admin/detailiklan", {
+            state: {
+              nama: "Gadget Canggih 2025",
+              advertiser: "GadgetStore",
+              jadwal: "01/10/2025 - 15/10/2025",
+              penempatan: "Header Banner",
+              status: "Pending",
+              deskripsi:
+                "Dapatkan diskon hingga 50% untuk semua produk gadget selama periode promo Oktober 2025.",
+              url: "https://gadgetcanggih2025.id/promo",
+              kategori: "Komersial",
+              ukuran: "728px x 90px",
+              tanggal: "07 Okt 2025 - 12 Okt 2025",
+              gambar: null,
+            },
+          })
+        }
+      />,
     ],
     [
       "Kuliner Nusantara",
@@ -58,9 +98,30 @@ export default function ManajemenIklan() {
       "07/10/2025 - 12/10/2025",
       "Banner Tengah",
       "Ditolak",
-      <Button label="Lihat" onClick={() => navigate("/admin/detailiklan")} />,
+      <Button
+        label="Lihat"
+        onClick={() =>
+          navigate("/admin/detailiklan", {
+            state: {
+              nama: "Kuliner Nusantara",
+              advertiser: "MakananLezat",
+              jadwal: "07/10/2025 - 12/10/2025",
+              penempatan: "Banner Tengah",
+              status: "Ditolak",
+              deskripsi:
+                "Promosi kuliner khas nusantara dengan cita rasa otentik Indonesia, ditolak karena banner tidak sesuai dimensi.",
+              url: "https://makananlezat.id/kuliner",
+              kategori: "Komersial",
+              ukuran: "728px x 90px",
+              tanggal: "07 Okt 2025 - 12 Okt 2025",
+              gambar: null,
+            },
+          })
+        }
+      />,
     ],
   ];
+
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
