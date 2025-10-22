@@ -10,6 +10,9 @@ import DaftarIklan from "./pages/advertiser/daftariklan";
 import DetailIklan from "./pages/advertiser/detailiklan";
 import EditIklan from "./pages/advertiser/editiklan";
 
+// Admin
+import DashboardAdmin from "./pages/admin/dashboardAdmin";
+
 /* Pages Login */
 import Login from "./pages/login";
 
@@ -32,6 +35,9 @@ function App() {
         <Route path="/advertiser/daftariklan" element={<DaftarIklan />} />
         <Route path="/advertiser/detailiklan" element={<DetailIklan />} />
         <Route path="/advertiser/editiklan" element={<EditIklan />} />
+
+        {/* Admin */}
+        <Route path="/admin/dashboard" element={<DashboardAdmin />} />
       </Routes>
     </Router>
   );

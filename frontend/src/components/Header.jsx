@@ -15,7 +15,7 @@ export default function Header({ page, section, onMenuClick, showSearch = true, 
                 <h2 className="text-sm font-medium">
                     <span className="text-gray-400">{page}</span>
                     <span className="text-gray-300 mx-1">/</span>
-                    <span className="text-teal-700">{section}</span>
+                    <span className="text-teal-700 font-bold">{section}</span>
                 </h2>
             </div>
 
@@ -25,11 +25,11 @@ export default function Header({ page, section, onMenuClick, showSearch = true, 
                         <img
                             src={searchIcon}
                             alt="Search"
-                            className="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400"
+                            className="absolute left-3 top-1/2 transform -translate-y-1/2 w-7 h-6 text-gray-400"
                         />
                         <input
                             type="text"
-                            placeholder="Cari di sini..."
+                            placeholder="Cari disini..."
                             className="w-full border rounded-lg px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-400"
                         />
                     </div>

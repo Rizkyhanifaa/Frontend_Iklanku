@@ -16,10 +16,9 @@ export default function Login() {
         if (selectedRole === "Advertiser") {
             navigate("/advertiser/dashboard");
         } else if (selectedRole === "Admin") {
-            navigate("/admin/dashboard"); // kalau nanti kamu buat dashboard admin
+            navigate("/admin/dashboard"); 
         }
     };
-
 
   return (
     <div className="flex flex-col min-h-screen">
