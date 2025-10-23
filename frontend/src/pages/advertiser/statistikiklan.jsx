@@ -21,7 +21,7 @@ export default function StatistikIklan() {
         { icon: buatiklan, label: "Buat Iklan", path: "/advertiser/buatiklan" },
         { icon: statistik, label: "Statistik Iklan", active: true, path: "/advertiser/statistik" },
         { icon: daftariklan, label: "Daftar Iklan", path: "/advertiser/daftariklan" },
-        { icon: logout, label: "Logout", path: "/logout" },
+        { icon: logout, label: "Logout", action: "logout" },
     ];
 
     const user = {

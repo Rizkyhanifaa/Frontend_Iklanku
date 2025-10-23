@@ -19,7 +19,7 @@ export default function DetailIklan() {
         { icon: buatiklan, label: "Buat Iklan", path: "/advertiser/buatiklan" },
         { icon: statistik, label: "Statistik Iklan", path: "/advertiser/statistik" },
         { icon: daftariklan, label: "Daftar Iklan", active: true, path: "/advertiser/daftariklan" },
-        { icon: logout, label: "Logout", path: "/logout" },
+        { icon: logout, label: "Logout", action: "logout" },
     ];
 
     const user = {
