@@ -1,15 +1,20 @@
 import React from "react";
 
 export default function StatusBadge({ status }) {
-    const lowerStatus = typeof status === "string" ? status.toLowerCase() : "";
+    console.log("Status yang diterima:", status);
+
+    const normalizedStatus = typeof status === "string"
+        ? status.toLowerCase().trim().replace(/[\s_-]+/g, "")
+        : "";
 
     const colors = {
         aktif: "bg-green-500 text-gray-700",
         pending: "bg-yellow-400 text-gray-700",
         ditolak: "bg-red-500 text-gray-700",
+        nonaktif: "bg-red-500 text-gray-700",
     };
 
-    const colorClass = colors[lowerStatus] || "bg-gray-400 text-gray-600";
+    const colorClass = colors[normalizedStatus] || "bg-gray-400 text-gray-600";
 
     return (
         <div className="flex items-center justify-center gap-2">
