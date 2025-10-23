@@ -16,6 +16,7 @@ import ManajemenIklan from "./pages/admin/2_manajemenIklan";
 import DetailIklanAdmin from "./pages/admin/3_detailIklanAdmin";
 import KelolaAdvertiser from "./pages/admin/4_kelolaAdvertiser";
 import StatistikAdmin from "./pages/admin/5_statistikAdmin";
+import DetailStatistikAdmin from "./pages/admin/6_detailStatistikAdmin";
 
 /* Pages Login */
 import Login from "./pages/login";
@@ -46,6 +47,7 @@ function App() {
         <Route path="/admin/detailiklan" element={<DetailIklanAdmin />} />
         <Route path="/admin/kelolaadvertiser" element={<KelolaAdvertiser />} />
         <Route path="/admin/statistik" element={<StatistikAdmin />} />
+        <Route path="/admin/detailstatistik" element={<DetailStatistikAdmin />} />
       </Routes>
     </Router>
   );

@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import React, { useState } from "react";
 import Sidebar from "../../components/Sidebar";
 import Header from "../../components/Header";
-import DetailIklanContainerAdmin from "../../components/DetailIklanContainerAdmin"; // pastikan sesuai
+import DetailIklanContainerAdmin from "../../components/DetailIklanContainerAdmin"; 
 import iklanku from "../../assets/iklanku.png";
 import home from "../../assets/home.png";
 import manageiklan from "../../assets/manajemen.png";
