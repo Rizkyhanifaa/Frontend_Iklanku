@@ -19,7 +19,7 @@ export default function DashboardAdmin() {
     { icon: manageiklan, label: "Manajemen Iklan", path: "/admin/manajemeniklan" },
     { icon: kelolaadv, label: "Kelola Advertiser", path: "/admin/kelolaadvertiser" },
     { icon: statistik, label: "Statistik", path: "/admin/statistik" },
-    { icon: logout, label: "Logout", path: "/logout" },
+    { icon: logout, label: "Logout", action: "logout" },
   ];
 
   // ===== User Info (Admin) =====

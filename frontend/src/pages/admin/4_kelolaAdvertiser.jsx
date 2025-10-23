@@ -44,7 +44,7 @@ export default function KelolaAdvertiser() {
     { icon: manageiklan, label: "Manajemen Iklan", path: "/admin/manajemeniklan" },
     { icon: kelolaadv, label: "Kelola Advertiser", active: true, path: "/admin/kelolaadvertiser" },
     { icon: statistik, label: "Statistik", path: "/admin/statistik" },
-    { icon: logout, label: "Logout", path: "/logout" },
+    { icon: logout, label: "Logout", action: "logout" },
   ];
 
   // ===== User Info =====
