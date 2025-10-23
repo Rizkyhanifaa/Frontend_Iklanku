@@ -14,6 +14,7 @@ import EditIklan from "./pages/advertiser/editiklan";
 import DashboardAdmin from "./pages/admin/1_dashboardAdmin";
 import ManajemenIklan from "./pages/admin/2_manajemenIklan";
 import DetailIklanAdmin from "./pages/admin/3_detailIklanAdmin";
+import KelolaAdvertiser from "./pages/admin/4_kelolaAdvertiser";
 
 /* Pages Login */
 import Login from "./pages/login";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/admin/dashboard" element={<DashboardAdmin />} />
         <Route path="/admin/manajemeniklan" element={<ManajemenIklan />} />
         <Route path="/admin/detailiklan" element={<DetailIklanAdmin />} />
+        <Route path="/admin/kelolaadvertiser" element={<KelolaAdvertiser />} />
       </Routes>
     </Router>
   );
