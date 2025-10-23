@@ -7,9 +7,9 @@ export default function Button({ label, onClick, color = "teal" }) {
             : color === "gray"
                 ? "bg-gray-500 hover:bg-gray-600"
                 : color === "red"
-                    ? "bg-red-500 hover:bg-red-600"
+                    ? "bg-red-700 hover:bg-red-600"
                     : color === "green"
-                        ? "bg-green-500 hover:bg-green-600"
+                        ? "bg-green-600 hover:bg-green-600"
                         : "bg-blue-500 hover:bg-blue-600";
                     
 

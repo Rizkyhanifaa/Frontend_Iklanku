@@ -8,10 +8,10 @@ export default function StatusBadge({ status }) {
         : "";
 
     const colors = {
-        aktif: "bg-green-500 text-gray-700",
+        aktif: "bg-green-600 text-gray-700",
         pending: "bg-yellow-400 text-gray-700",
-        ditolak: "bg-red-500 text-gray-700",
-        nonaktif: "bg-red-500 text-gray-700",
+        ditolak: "bg-red-700 text-gray-700",
+        nonaktif: "bg-red-700 text-gray-700",
     };
 
     const colorClass = colors[normalizedStatus] || "bg-gray-400 text-gray-600";
